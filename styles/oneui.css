@@ -1,0 +1,94 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/RobotoVar.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto;
+    background-color: rgb(245, 245, 245);
+}
+
+.subheader {
+    padding:35px 25px 0px 25px;
+    font-weight: 300;
+}
+
+.textboxcontainer {
+    display:flex;
+    justify-content: center;
+}
+
+.textbox {
+  width: 80%;
+  max-width: 80%;
+  padding: 14px 18px;
+  font-size: 16px;
+  border: none;
+  text-align: left;
+  color: #1c1c1e;
+  border-bottom: 2px solid #c5c5c5;
+
+}
+
+.textbox::placeholder {
+  color: #9ca3af;
+}
+
+.textbox:focus {
+    outline: none;
+    border-bottom: 2px solid rgb(9, 142, 231);
+}
+
+.button-split-half {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 3 equal columns */
+    gap: 25px;
+    padding: 20px 10px;
+}
+
+.buetton-split-half button {
+    height:10vh;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+}
+
+.ripple-button {
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(9, 142, 231);
+  padding: 14px 20px;
+  border: none;
+  border-radius: 50px;
+  font-size: 17px;
+  font-weight: bold;
+  height: 5vh;
+  color: #ffffff;
+  cursor: default;
+}
+
+.ripple-button .secondary {
+    background-color: white;
+}
+
+.ripple-button .ripple {
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  animation: ripple-animation 500ms linear;
+  background-color: rgba(80, 80, 80, 0.4);
+}
+
+@keyframes ripple-animation {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
