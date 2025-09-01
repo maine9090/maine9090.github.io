@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!-- One-Page Website -->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/083e26693c.js" crossorigin="anonymous"></script>
+        <script src="./resource/tabs.js"></script>
+        <link rel="stylesheet" href="./resource/mainstyle.css">
+        <link rel="stylesheet" href="./resource/homepage.css">
+        <link rel="stylesheet" href="./resource/imageformat.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <title>Portfolio</title>
+    </head>
+
+    <body>
+        <!-- Navigation Bar -->
+        <div class="navLinkParent">
+            <div class="navBar">
+                <p class="mainTitle">Shaheem Javied</p>
+                <div class="navLinks">
+                    <button id="tabButton_Home" class="tabButton activeTab" onclick="swapPageTab('page_Home', 'tabButton_Home')">
+                        <i class="fa-solid fa-house" id="mobileTabIcon"></i>
+                        <p><i class="fa-solid fa-house"></i> &nbsp; Home</p>
+                    </button>
+                    <button id="tabButton_Works" class="tabButton" onclick="swapPageTab('page_Works', 'tabButton_Works')">
+                        <i class="fa-solid fa-book" id="mobileTabIcon"></i>
+                        <p><i class="fa-solid fa-book"></i> &nbsp; Works</p>
+                    </button>
+                    <button id="tabButton_Highlights" class="tabButton" onclick="swapPageTab('page_Highlights', 'tabButton_Highlights')">
+                        <i class="fa-solid fa-star" id="mobileTabIcon"></i>
+                        <p><i class="fa-solid fa-star"></i> &nbsp; Highlights</p>
+                    </button>
+                    <button id="tabButton_Contacts" class="tabButton" onclick="swapPageTab('page_Contact', 'tabButton_Contacts')">
+                        <i class="fa-solid fa-phone" id="mobileTabIcon"></i>
+                        <p><i class="fa-solid fa-phone"></i> &nbsp; Contact</p>
+                    </button>
+                </div>
+            </div>  
+        </div>
+
+        <!-- HomePage -->
+
+        <div class="tabBody" id="page_Home" style="display:block;">
+            <div class="hp_mainbanner">
+                <h1>Banner Title</h1>
+            </div>
+
+            <div style="height: 200vh;">
+                This is a placeholder paragraph to test different elements. This will be removed.
+            </div>
+        </div>
+        <div class="tabBody" id="page_Works" style="display:none;">
+            Workpage [2]
+            <br>
+            <br>
+            image:
+            <img src="placeholdertoshowmissingimageicon.something">
+        </div>
+        <div class="tabBody" id="page_Highlights" style="display:none;">
+            HighlightsPage [3]
+            <br>
+            <br>
+            image:
+            <img src="placeholdertoshowmissingimageicon.something">
+        </div>
+        <div class="tabBody" id="page_Contact" style="display:none;">
+            Contactpage [4]
+            <br>
+            <br>
+            image:
+            <img src="placeholdertoshowmissingimageicon.something">
+        </div>
+    </body>
+</html>
+
+<!-- Made by Shaheem Javied :) -->
+
+<!-- Started 29-08-2025 -->
