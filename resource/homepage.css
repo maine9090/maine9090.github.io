@@ -1,0 +1,10 @@
+.hp_mainbanner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    background: url("./homepage/mainbanner.jpg");
+    height: 500px;
+    object-fit: cover;
+    border-radius: 30px;
+}

@@ -1,0 +1,103 @@
+.ralewayfont {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+html {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    margin: 0;
+    font-family: 'Raleway';
+    background-color: rgb(243, 247, 255);
+}
+
+.mainTitle {
+    font-family: 'Raleway';
+    position: relative;
+    font-weight: 800;
+    font-size: 20px;
+    padding-left: 5%
+}
+
+.navLinkParent {
+    position: sticky;
+    top:0;
+    z-index: 100;
+    padding: 15px;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(185, 216, 245, 0.062);
+    border-radius: 1000px;
+    backdrop-filter: blur(6px);
+    color: rgb(25, 36, 46);
+    border-top: 2px solid rgba(105, 158, 223, 0.247);
+    border-right: 2px solid rgba(107, 142, 185, 0.247);
+    border-bottom: 2px solid rgba(75, 99, 129, 0.247);
+    border-left: 2px solid rgba(118, 142, 172, 0.247);
+}
+
+.navLinks {
+    display: flex;
+    justify-content: right;
+}
+
+.tabButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    font-family: 'Raleway';
+    font-weight: 600;
+    color: rgb(25, 36, 46);
+    border-radius: 1000px;
+    width: 17vw;
+    cursor: pointer;
+}
+
+.activeTab {
+    background: linear-gradient(60deg,rgba(255, 255, 255, 0.048) 0%, rgba(255, 255, 255, 0.048) 10%, rgba(227, 227, 227, 0.11) 45%);
+    backdrop-filter: blur(20px);
+    border-right: 2px solid #305c9654;
+    border-left: 2px solid #8babd354;
+}
+
+#mobileTabIcon {
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    #mobileTabIcon {
+        display: block;
+    }
+
+    .mainTitle {
+        display: none;
+    }
+    
+    .navBar {
+        justify-content: center;
+    }
+
+    .navLinks {
+        width: 100%;
+    }
+
+    .tabButton {
+        flex: 1;
+        padding: 15px;
+    }
+
+    .tabButton p {
+        display: none;
+    }
+}
+/* Made by Shaheem Javied */
